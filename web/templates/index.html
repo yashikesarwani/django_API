@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <h1 align = "center"> "Team Mocking Birds API! "</h1>
+	<h1 align = "center"> "REACTION.AI" </h1>
+    <center style = padding-left:200px  >
+<script type="text/javascript" src="scripts.js"></script>
+<link rel="stylesheet" href="style.css" >
+        </center>
+		<!--
+		<style type = "text/css">
+		
+			#container{
+				margin: 0px auto;
+				width: 500px;
+				height: 375px;
+				border: 10px #333 solid; 
+			}
+			
+			#videoElement{
+				width: 500px;
+				height: 375px;
+				background-color: #666;
+			}
+		</style>  -->	
+		
+</head>
+<body bgcolor = "white">
+
+<!--<div id = "container">
+	<video autoplay= "true" id = "videoElement">
+	</video>
+</div>-->
+
+<script type = "text/javascript">
+		//var video = document.querySelector("#videoElement");
+		
+		navigator.getUserMedia = navigator.getUserMedia||navigator.webkitGetUsermedia||
+		navigator.mozGetUserMedia || navigator.msGetUserMedia||
+		navigator.oGetUserMedia;
+		if (navigator.getUserMedia){
+			navigator.getUserMedia({video:true}, handleVideo, videoError);
+		}
+	    
+		function handleVideo(stream){
+			video.src = window.URL.createObjectURL(stream);
+		}
+		
+		function videoError(e){
+		
+		}
+</script>
+
+<div align = "center">
+<!--
+<iframe width="400" height="300"
+    src="https://www.youtube.com/watch?v=HZLqmTUPz9E">
+</iframe>  -->
+
+<iframe width="500" height="400" "position: relative; top: 100px;" src="https://www.youtube.com/embed/HZLqmTUPz9E" 
+frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div> 
+
+<footer align = "center">
+  <p>Posted by: Mocking Birds</p>
+  <p>Contact information: <a href="jatinmandav3@gmail.com">
+  jatinmandav3@gmail.com</a>.</p>
+</footer>
+
+
+
+</body>
+</html>
